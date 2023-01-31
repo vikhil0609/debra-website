@@ -1,0 +1,61 @@
+.sales-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 3px;
+  flex-wrap: wrap;
+}
+
+.sales-content div {
+  flex: 1;
+  padding: 0.5em; /* add some padding ?*/
+  text-align: left;
+  border-right: 1px solid grey;
+}
+
+.sales-content div:last-child {
+  border: none; /* remove border ? */
+}
+
+.sales-content div h2 {
+  display: block;
+  font-size: 24px;
+  color: #000;
+}
+
+.sales-content div p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10%;
+}
+
+.avia_image {
+  width: 20%;
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 900px) {
+  .sales-content div {
+    list-style: none;
+    flex: 0 0 33.333333%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .items {
+    align-items: center;
+  }
+  .sales-content div {
+    list-style: none;
+    flex: 0 0 100%;
+    margin-top: 10%;
+    border: none;
+    margin-right: 100%;
+  }
+  .sales-content div p {
+    /* margin-right: 20%; */
+  }
+}
